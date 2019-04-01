@@ -1,0 +1,9 @@
+applications:
+- name: sentimentanalysis
+  buildpack: java_buildpack
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+  services:
+    - mysqldb
+  routes:
+  - route: sentimentanalysis.cfapps.io
